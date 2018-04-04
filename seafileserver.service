@@ -1,0 +1,11 @@
+[Unit]
+Description=Container seafileserver
+After=network.target systemd-resolved.service
+
+[Service]
+ExecStart=/usr/bin/systemd-nspawn -M seafileserver -D /media/hd-storage/seafileserver/image --bind=/media/hd-storage/seafileserver/settings:/settings --bind=/media/hd-storage/seafileserver/storage:/storage --network-bridge=br_wired -b
+KillMode=mixed
+Type=notify
+
+[Install]
+WantedBy=multi-user.target

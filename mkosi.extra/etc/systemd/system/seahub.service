@@ -1,0 +1,13 @@
+[Unit]
+Description=seahub
+After=network.target seafile.service
+
+[Service]
+Type=forking
+ExecStartPre=/bin/sleep 3
+ExecStart=/opt/seafile/seafile-server-latest/seahub.sh start
+ExecStop=/opt/seafile/seafile-server-latest/seahub.sh stop
+WorkingDirectory=/opt/seafile/seafile-server-latest
+
+[Install]
+WantedBy=multi-user.target

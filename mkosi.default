@@ -1,0 +1,8 @@
+[Distribution]
+Distribution=ubuntu
+Release=xenial
+# Release=artful
+
+[Output]
+Format=directory
+Bootable=no

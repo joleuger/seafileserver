@@ -1,0 +1,12 @@
+[Unit]
+Description=seafile
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/seafile/seafile-server-latest/seafile.sh start
+ExecStop=/opt/seafile/seafile-server-latest/seafile.sh stop
+WorkingDirectory=/opt/seafile/seafile-server-latest
+
+[Install]
+WantedBy=multi-user.target
