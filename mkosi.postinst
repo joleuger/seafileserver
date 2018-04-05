@@ -40,7 +40,7 @@ apt-get install -qy libjansson-dev libzdb-dev valac libarchive-dev libcurl4-open
 apt-get install -qy libevent-dev
 apt-get install -qy build-essential
 apt-get install -qy libevent-dev libcurl4-openssl-dev libglib2.0-dev uuid-dev intltool libsqlite3-dev libmysqlclient-dev libarchive-dev libtool libjansson-dev valac libfuse-dev re2c flex python-setuptools cmake
-apt-get install -qy libldap2-dev sqlite3
+apt-get install -qy libldap2-dev sqlite3 libjpeg-dev
 
 
 apt-get install -qy python-pip
